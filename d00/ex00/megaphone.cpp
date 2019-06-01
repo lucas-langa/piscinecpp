@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+#include <iostream>
+
+int 	main(int ac, char **av)
+{
+	if (ac == 1)
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
+	else
+	{
+		while (*av[1])
+		{
+			std::cout << (char)toupper(*av[1]);
+			av[1]++;
+		}
+		std::cout << std::endl;
+	}
+}
+=======
 #include <iostream>
 #include <ctype.h>
 #include <stdio.h>
@@ -35,3 +53,4 @@ int	main( int ac, char **av )
 		disp(av, ac);
 	return (0);
 }
+>>>>>>> c63eaaa87dd0613a900a90d417b97b2530aba038
