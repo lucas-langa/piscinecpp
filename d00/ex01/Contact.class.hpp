@@ -5,11 +5,11 @@
 class Contact {
 	public:
 
-		Contact( std::string first_name, std::string last_name );
+		Contact();
 		~Contact ( void );
+		void add_contact(void);
 		std::string get_attr( std::string attr_name  ) const;
-
-	private:
+		
 		std::string first_name;
 		std::string last_name;
 		std::string nickname;
@@ -19,6 +19,8 @@ class Contact {
 		std::string phone_number;
 		std::string birthday_date;
 		std::string favorite_meal;
+
+	private:
 		std::string underwear_color;
 		std::string darkest_secret;
 	

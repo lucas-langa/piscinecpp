@@ -1,5 +1,5 @@
 megaphone : megaphone.cpp
-	g++ megaphone.cpp -Wall -Werror -Wextra -o megaphone
+	clang++ megaphone.cpp -Wall -Werror -Wextra -o megaphone
 clean : 
 	rm megaphone
 re : clean megaphone
