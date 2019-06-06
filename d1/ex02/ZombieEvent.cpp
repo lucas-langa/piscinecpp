@@ -1,6 +1,23 @@
 #include "ZombieEvent.hpp"
 
-		ZombieEvent::ZombieEvent( );
-	    ZombieEvent::~ZombieEvent( );
-void    ZombieEvent::setZombieType( std::string type );
-Zombie* ZombieEvent::newZombie( std::string name );
+ZombieEvent::ZombieEvent( ){
+	std::cout << "Zombie making here" << std::endl;
+};
+
+ZombieEvent::~ZombieEvent(  ) {
+	std::cout << "Zombie crush saga happening" << std::endl;
+};
+
+Zombie 		*newZombie( std::string name ){ 
+	
+	Zombie *zombie = new Zombie(name );
+	ZombieEvent::setZombieType( zombie, "asian");
+	return (zombie);
+};
+
+void    ZombieEvent::setZombieType( Zombie * zombie, std::string type ) {
+	zombie->type = type;
+	return ;
+};
+
+// Zombie* ZombieEvent::newZombie( std::string name );

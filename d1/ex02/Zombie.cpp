@@ -1,12 +1,12 @@
 #include "Zombie.hpp"
 #include <iostream>
 
-Zombie::Zombie( std::string name, std::string type) : _name(name), _type(type) {
+Zombie::Zombie( std::string name) : _name(name) {
 	return ;
 };
 
 void	Zombie::announce( void ) const {
-	std::cout << "<" << this->_name << " (" << this->_type << ")Braiiiiiiinnnssss... " << std::endl;
+	std::cout << "<" << this->_name << " (" << this->type << ")> Braiiiiiiinnnssss... " << std::endl;
 	return ;
 };
 
