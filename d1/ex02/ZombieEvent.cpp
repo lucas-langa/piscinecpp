@@ -8,11 +8,11 @@ ZombieEvent::~ZombieEvent(  ) {
 	std::cout << "Zombie crush saga happening" << std::endl;
 };
 
-Zombie 		*ZombieEvent::newZombie( std::string name ){ 
+Zombie 		*ZombieEvent::newZombie( std::string name, std::string type ){ 
 	
-	Zombie *zombie = new Zombie(name );
-	ZombieEvent::setZombieType( zombie, "asian");
-	return (zombie);
+	Zombie *zombie = new Zombie( name );
+	ZombieEvent::setZombieType( zombie, type );
+	return ( zombie );
 };
 
 void    ZombieEvent::setZombieType( Zombie * zombie, std::string type ) {
