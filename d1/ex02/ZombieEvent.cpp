@@ -8,7 +8,7 @@ ZombieEvent::~ZombieEvent(  ) {
 	std::cout << "Zombie crush saga happening" << std::endl;
 };
 
-Zombie 		*newZombie( std::string name ){ 
+Zombie 		*ZombieEvent::newZombie( std::string name ){ 
 	
 	Zombie *zombie = new Zombie(name );
 	ZombieEvent::setZombieType( zombie, "asian");
