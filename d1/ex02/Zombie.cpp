@@ -11,5 +11,6 @@ void	Zombie::announce( void ) const {
 };
 
 Zombie::~Zombie(  ) {
+	std::cout << "i died " << this->_name << std::endl;
 	return ;
 };
