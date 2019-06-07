@@ -10,9 +10,9 @@
 */
 
 class Sample {
-    
+
     public:
-    
+
         Sample( void ); //canonical
         Sample( int const n );
         Sample( Sample const & src ); //canonical
