@@ -2,7 +2,6 @@
 #include <iostream>
 
 Zombie::Zombie( std::string name) : _name(name) {
-	std::cout << "A zombie by the name " << this->_name << " has spawned" << std::endl;
 	return ;
 };
 
@@ -12,6 +11,7 @@ void	Zombie::announce( void ) const {
 };
 
 Zombie::~Zombie(  ) {
+<<<<<<< HEAD
 	std::cout << this->_name << " has died"<< std::endl;
-	return ;
-};
+=======
+	std::cout << "i died " << this->_name << std::endl;
