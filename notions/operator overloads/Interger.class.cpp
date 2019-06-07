@@ -30,7 +30,7 @@ Interger		Interger::operator+( Interger const & rhs ) const {
 	std::cout << "Addition operator called with " << this->_n;
 	std::cout << " and " << rhs.getValue() << std::endl;
 
-	return ( Interger (this->_n - rhs.getValue() ) );
+	return ( Interger (this->_n + rhs.getValue() ) );
 }
 
 std::ostream 	& 	operator<<(std::ostream & o, Interger const & rhs ) {
