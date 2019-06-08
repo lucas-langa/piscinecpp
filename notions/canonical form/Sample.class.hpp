@@ -13,12 +13,12 @@ class Sample {
 
     public:
 
-        Sample( void ); //canonical
-        Sample( int const n );
-        Sample( Sample const & src ); //canonical
-        ~Sample( void ); //canonical
+        Sample( void ); //default canonical
+        Sample( int const n ); //parametric constructor
+        Sample( Sample const & src ); //copy canonical
+        ~Sample( void ); //default destructor
 
-        /*= operator overload */
+        /*= assignment operator overload */
         Sample &    operator=( Sample const & rhs ); //canonical
 
         int         getFoo( void ) const;
