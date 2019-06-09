@@ -2,3 +2,4 @@
 a.out
 numbers
 *.out
+.DS_store
