@@ -7,6 +7,7 @@ class Character {
 };
 
 class Warrior : public Character {
+	//this is a character
 	public:
 		virtual void 	sayHello( std::string const & target );
 };
@@ -30,6 +31,7 @@ int		main(void) {
 	Warrior*	a =   new Warrior();
 
 	//This is also ok because warrior is a character
+	//this will be treated as a character and not a warrior
 	Character*	b = new Warrior();
 
 	// This would not be fine because Character is not a warrior
