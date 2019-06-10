@@ -3,6 +3,10 @@
 
 class Character {
 	public:
+	/*
+	* virtual defines this class as abstract, but if can be instantiated, adding =0 will make sayHello a pure function,
+	*	and Character a abstract abstract class(cannot be instantiated
+	*/
 		virtual void 	sayHello( std::string const & target );
 };
 
