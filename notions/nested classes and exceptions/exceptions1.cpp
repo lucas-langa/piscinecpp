@@ -3,9 +3,9 @@
 void 	test1() {
 	try
 	{
-		if (/* condition */)
+		if (/* condition */1)
 		{
-	-		throw std::exception();
+			throw std::exception();
 			/* code */
 		}
 		else
@@ -21,7 +21,7 @@ void 	test1() {
 }
 
 void	test2() {
-	if ( /* there's an error */ )
+	if ( /* there's an error */ 1)
 	{	
 		throw std::exception();
 	}
